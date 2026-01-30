@@ -1,0 +1,17 @@
+baseURL = 'https://www.wangjianchao.cn'
+languageCode = 'en-us'
+title = '爱语霖爱生活'
+theme = 'contrast-hugo'
+hasCJKLanguage = true
+
+params:
+  excerpts: false
+
+menu:
+  main:
+  - {name: "Home", url: "/", weight: 1}
+  - {name: "About", url: "/about/", weight: 2}
+  social:
+  - {name: "Mail", url: "mailto:", identifier: "envelope", weight: 3}
+  - {name: "Github", url: "https://github.com/", identifier: "github", weight: 4}
+  - {name: "Subscribe", url: "/index.xml", identifier: "rss", weight: 5}
