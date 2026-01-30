@@ -1,6 +1,7 @@
 baseURL = "https://wangjianchao.cn"
 title = "爱语霖爱生活"
 theme = "hugo-geekblog"
+timeZone = "Asia/Shanghai"
 
 pluralizeListTitles = false
 
