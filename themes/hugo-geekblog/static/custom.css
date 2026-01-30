@@ -1,1 +1,37 @@
-/* You can add custom styles here. */
+/* 代码块自动换行 */
+.gblog-markdown pre code {
+    white-space: pre-wrap;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+
+/* 高亮代码块自动换行 */
+.highlight pre.chroma,
+.gblog-markdown pre {
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+/* 代码行号表格的换行处理 */
+.chroma .lntable {
+    display: block;
+    white-space: pre-wrap;
+}
+
+.chroma .lntable td {
+    vertical-align: top;
+}
+
+.chroma .lntable td:nth-child(2) {
+    width: 100%;
+    display: block;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+/* 保持行号列固定宽度 */
+.chroma .lntable td:first-child {
+    white-space: nowrap;
+}
