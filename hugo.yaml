@@ -1,113 +1,14 @@
-# ===============================================================
-# 根据如下的配置说明完善自己的站点配置，建议另外拷贝进行调整避免冲突
-# Improve your site configuration according to the following 
-# configuration instructions. It is recommended to make 
-# additional copies for adjustment to avoid conflicts
-# ===============================================================
-
-# ---------------------------------------------------------------
-# Hugo 引擎的基础配置
-# Basic configure for Hugo engine 
-# ---------------------------------------------------------------
-
-# 站点域名，比如： https://hugo-next.eu.org
-# Website domain, eg: https://hugo-next.eu.org
 baseURL: /
 # 站点标题
-# Website title
-title: Hugo NexT
+title: 爱语霖爱生活
 # 主题名称
-# Theme name
 theme: hugo-theme-next
 # 站点默认的语言和代码
-# Default language & code for website
 defaultContentLanguage: zh-cn
 languageCode: zh-CN
 # 多语言配置
-# Multi-language settings
-languages:
-  zh-cn:
-    languageCode: zh-CN
-    languageDirection: ltr
-    languageName: "简体中文"
-    weight: 1    
-  en-us:
-    languageCode: en-US
-    languageDirection: ltr
-    languageName: English
-    weight: 2
-    menus:
-      main:
-        - identifier: home
-          name: Home
-          pageRef: /
-          pre: home
-          weight: 1
-        - identifier: about
-          name: About
-          pageRef: /about.html
-          pre: user
-          weight: 2
-        - identifier: flinks
-          name: Friend's Links
-          pageRef: /flinks.html
-          pre: thumbs-up
-          weight: 3
-        - identifier: example
-          name: Example
-          pre: angles-down
-          weight: 4
-        - identifier: syntax
-          name: Syntax Highlighting
-          pageRef: /post/09-syntax-highlighting
-          weight: 1   
-          parent: example
-        - identifier: math
-          name: Math Formula
-          pageRef: /post/10-math-formula
-          weight: 2   
-          parent: example
-        - identifier: flow-charts
-          name: Flow Charts
-          pageRef: /post/11-mermaid-charts
-          weight: 3
-          parent: example
-        - identifier: archives
-          name: Archives
-          pageRef: /archives
-          pre: archive
-          weight: 5
-        - identifier: commonweal
-          name: Commonweal404
-          pageRef: /404.html
-          pre: heartbeat
-          weight: 6
-    params:
-      yearFormat: "2006"
-      monthFormat: "01/02"
-      dateFormat: "2006/01/02"
-      timeFormat: "2006/01/02 15:04:05 -07:00"
-
-      author: NexT Theme
-      subtitle: Build for Hugo Theme
-      description: Keep it simple, keep it powerful.
-      keywords: Hugo,NexT,theme,simple,powerful
-
-      linksSets:
-        title: Links
-      
-      footer:
-        beian:
-          enable: false
-      
-      postFooter:
-        endLineTip: "~ End Line ~"
-      
-      rewardSets:
-        comment: '<i class="fa-solid fa-mug-hot"></i>  How about you buy me a coffee?ヾ(^▽^*)))'
 
 # 是否包含中文，日语，韩文
-# Whether contains Chinese, Japanese and Korean
 hasCJKLanguage: true
 # 每页显示文章数量
 # Display items per page
@@ -210,41 +111,11 @@ menus:
       pageRef: /about
       pre: user
       weight: 2
-    - identifier: flinks
-      name: 友情链接
-      pageRef: /flinks
-      pre: thumbs-up
-      weight: 3
-    - identifier: example
-      name: 语法示例
-      pre: angles-down
-      weight: 4
-    - identifier: syntax
-      name: 语法高亮
-      pageRef: /post/09-syntax-highlighting
-      weight: 1
-      parent: example
-    
-    - identifier: math
-      name: 数学公式
-      pageRef: /post/10-math-formula
-      weight: 2 
-      parent: example
-    - identifier: flow-charts
-      name: 流程图
-      pageRef: /post/11-mermaid-charts
-      weight: 3
-      parent: example
     - identifier: archives
       name: 归档
       pageRef: /archives
       pre: archive
-      weight: 5
-    - identifier: commonweal
-      name: 公益 404
-      pageRef: /404.html
-      pre: heartbeat
-      weight: 6
+      weight: 3
 
 #-----------------------------------------
 # Hugo NexT 主题参数配置
@@ -264,9 +135,9 @@ params:
 
   # 页面模式
   # Schemes
-  #scheme: Muse
-  #scheme: Mist
-  #scheme: Pisces
+  # scheme: Muse
+  # scheme: Mist
+  # scheme: Pisces
   scheme: Gemini
 
   # 开启暗模式
@@ -276,10 +147,10 @@ params:
 
   # 站点基本信息
   # Site Information Settings
-  author: NexT 主题
-  subtitle: 为 Hugo 打造的主题
-  description: 保持简单的易用性和强大的功能。
-  keywords: Hugo,NexT,主题,简单,强大
+  author: TinyKing
+  subtitle: 用代码构建产品，用文字记录思考
+  description: 用代码构建产品，用文字记录思考
+  keywords: 个人网站,博客,blog
 
   # 不同尺寸站点图标
   # Different size of favicon
@@ -389,7 +260,7 @@ params:
   avatar:
     # 设置显示头像的相对路径
     # Replace the default image and set the url here.
-    url: /imgs/hugo_next_avatar.png
+    url: /img/logo.jpg
     # 开启头像的圆形显示效果
     # If true, the avatar will be displayed in circle.
     rounded: true
@@ -417,9 +288,9 @@ params:
   # Key is the link label order.
   # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
   socials: 
-    social0: Github || https://github.com/elkan1788 || fab fa-github
-    #social1: E-Mail || mailto:yourname@gmail.com || fa fa-envelope
-    social2: 知乎 || https://www.zhihu.com/people/lisenhui || fa fa-book
+    social0: Github || https://github.com/tinyking || fab fa-github
+    social1: E-Mail || mailto:tinyking86@gmail.com || fa fa-envelope
+    # social2: 知乎 || https://www.zhihu.com/people/lisenhui || fa fa-book
     #Google: https://plus.google.com/yourname || fab fa-google
     #Twitter: https://twitter.com/yourname || fab fa-twitter
     #FB Page: https://www.facebook.com/yourname || fab fa-facebook
@@ -459,9 +330,9 @@ params:
   # 用法： `Key: 显示名称 || 链接地址`
   # Links of your friends
   # Usage: `Key: name || permalink`
-  links: 
-    link0: Hugo-NexT || https://gitee.com/hugo-next/hugo-theme-next
-    link1: 凡梦星尘空间站 || https://lisenhui.cn
+  # links: 
+  #   link0: Hugo-NexT || https://gitee.com/hugo-next/hugo-theme-next
+  #   link1: 凡梦星尘空间站 || https://lisenhui.cn
 
   # 文章目录显示
   # Table of Contents in the Sidebar
@@ -519,7 +390,7 @@ params:
     # Beian ICP and gongan information for Chinese users. 
     # See: https://beian.miit.gov.cn, http://www.beian.gov.cn
     beian:
-      enable: true
+      enable: false
       # ICP 备案的具体信息
       icp: 粤ICP备 18047355-1 号
       # 公安网备的省份简称
@@ -530,7 +401,7 @@ params:
     # 站点支持供应商列表
     # Vendors list who support website. 
     vendors:
-      enable: true
+      enable: false
       # 支持说明
       # Some support information description.
       title: 提供CDN/云资源支持
@@ -643,7 +514,7 @@ params:
     # 是否开启捐赠按钮，开启后将在每个文章页面底部显示
     # If true, a donate button will be displayed 
     # in every article by default.
-    enable: true
+    enable: false
     # 是否开启捐赠方式的动画效果
     # If true, the donate type title will with animation.
     animation: true
@@ -667,14 +538,14 @@ params:
   followMe:
     #channel0: Twitter || https://twitter.com/username || fab fa-twitter
     #channel1: Telegram || https://t.me/channel_name || fab fa-telegram
-    channel2: WeChat || /images/wechat_channel.jpg || fab fa-weixin
+    # channel2: WeChat || /images/wechat_channel.jpg || fab fa-weixin
     channel3: RSS || /rss.xml || fa fa-rss
 
   # 文章的在线编辑
   # Post edit
   # Easily browse and edit blog source code online.
   postEdit:
-    enable: true
+    enable: false
     url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name/
 
 
@@ -776,7 +647,7 @@ params:
     enable: true
     # 你的 Github 仓库地址
     # Your repository url on Github.
-    permalink: https://github.com/hugo-next
+    permalink: https://github.com/tinyking
     # 关注说明
     # Show this title when cursor move on.
     title: Follow me on GitHub
@@ -959,17 +830,17 @@ params:
   # 更多配置信息请参考：https://waline.js.org/
   # Waline comments system
   # More info seee: https://waline.js.org/
-  waline:
-    placeholder: "请文明发言哟 ヾ(≧▽≦*)o"
-    sofa: "快来发表你的意见吧 (≧∀≦)ゞ"
-    emoji: false
-    imgUploader: false
-    wordLimit: 200
-    requiredMeta: ['nick', 'mail']
-    reaction: true
-    reactionText: [ '点赞', '踩一下', '得意', '不屑', '尴尬', '睡觉']
-    reactionTitle: "你认为这篇文章怎么样？"
-    serverURL: #<your waline server url>
+  # waline:
+  #   placeholder: "请文明发言哟 ヾ(≧▽≦*)o"
+  #   sofa: "快来发表你的意见吧 (≧∀≦)ゞ"
+  #   emoji: false
+  #   imgUploader: false
+  #   wordLimit: 200
+  #   requiredMeta: ['nick', 'mail']
+  #   reaction: true
+  #   reactionText: [ '点赞', '踩一下', '得意', '不屑', '尴尬', '睡觉']
+  #   reactionTitle: "你认为这篇文章怎么样？"
+  #   serverURL: #<your waline server url>
   # Waline(2) 与 Waline3 无法兼容只能是二选一
   # Waline3 采用的是ES模块开发，需要更高版本的浏览器才能支持，如考虑兼容性建议可优先选用Waline2
   # waline3:

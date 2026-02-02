@@ -3185,12 +3185,6 @@ header.header {
   animation: beat 1.33s ease-in-out infinite;
 }
 
-.beian img {
-  display: inline-block;
-  margin: 0 3px;
-  vertical-align: middle;
-}
-
 /*
 // < 767px
 @include mobile() {
@@ -3823,25 +3817,6 @@ header.header {
   font-weight: normal;
   margin: initial;
   overflow-wrap: break-word;
-}
-
-.posts-expand .post-title .post-edit-link {
-  border-bottom: 0;
-  color: #bbb;
-  float: right;
-  font-size: 1.25em;
-  margin-left: -1.2em;
-  transition: color 0.2s ease-in;
-}
-
-@media (max-width: 567px) {
-  .posts-expand .post-title .post-edit-link {
-    margin-left: initial;
-  }
-}
-
-.posts-expand .post-title .post-edit-link:hover {
-  color: #fc6423;
 }
 
 .posts-expand .post-title-link {
@@ -4830,23 +4805,6 @@ mark.search-keyword {
 .search-popup .search-result-icon {
   color: #ccc;
   margin: auto;
-}
-
-.wl-actions > button:nth-child(3) {
-  display: none;
-}
-
-@media (max-width: 767px) {
-  .wl-reaction-img {
-    width: 28px;
-    height: 28px;
-  }
-  .wl-reaction-votes {
-    padding: 0.85px;
-    font-weight: 500;
-    font-size: .65em;
-    line-height: .85;
-  }
 }
 
 .use-motion .animated {
