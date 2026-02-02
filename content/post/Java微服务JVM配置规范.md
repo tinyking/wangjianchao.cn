@@ -3,7 +3,6 @@ title: "K8S集群中Java微服务JVM配置规范"
 date: "2026-02-02T15:33:26+08:00"
 authors:
   - tinyking
-draft: true
 ---
 
 > 今天服务巡检发现，研发在使用K8S部署Java微服务时，一些参数调优配置的不是很合理，容易引起生产应用被K8S驱逐。
