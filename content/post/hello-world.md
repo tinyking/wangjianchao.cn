@@ -3,7 +3,6 @@ layout:     post
 title:      "欢迎来到【爱语霖爱生活】"
 subtitle:   "Welcome"
 date:       2026-01-29
-URL: "/posts/2026/01/29/hello-world/"
 ---
 
 ## Welcome
