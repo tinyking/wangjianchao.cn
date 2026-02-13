@@ -1,8 +1,8 @@
 ---
-layout:     post 
-title:      "欢迎来到【爱语霖爱生活】"
-subtitle:   "Welcome"
-date:       2026-01-29
+title: "欢迎来到【爱语霖爱生活】"
+date: 2026-01-29
+tags: ["随笔"]
+categories: ["生活"]
 ---
 
 ## Welcome
@@ -14,6 +14,7 @@ date:       2026-01-29
 这一次的重启，一定要坚持下去，加油～
 
 <!--more-->
+
 ---
 
 本次选择了hugo
